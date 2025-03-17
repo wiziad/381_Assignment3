@@ -19,23 +19,26 @@
     
     <main class="login">
         <h2>LMS Login</h2>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
-        </form> 
+        <form id="login-form">
+            <div class="login-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <div id="message-box" class="message-box" style="display:none;"></div>
+            </div>
+            <button type="submit">Login</button>
+        </form>
         <br>
         <br>  
-            <a href="course_view.html">
-                <button>Login</button>
-            </a><br><br>
+            <br><br>
             <a href="#">Forgot Password?</a>
+            <a href="signup.html">Sign Up</a>
         
     </main>
     <footer>
         <p>&copy; 2025 LMS. All rights reserved.</p>
     </footer>
+    <script src="login.js"></script>
 </body>
 </html>
