@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Ethan Klassen (30211435)
+Ziad Hamed (30216545)
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <header>
+        <img src="logo.jpg" alt="LMS Logo" style="width: 100px; height: 100px;">
+        <h1>LMS - Learning Management System</h1>
+    </header>
+    <div>
+        <nav>
+            <a href="index.html">Homepage</a>
+        </nav>
+    </div>
+    <main>
+        <section class="form-container">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="signup-container">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <div id="message-box" class="message-box" style="display:none;"></div>
+                </div>
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+            <div id="message-container"></div>
+        </section>
+    </main>
+    <script src="signup.js"></script>
+</body>
+</html>
